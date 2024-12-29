@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fireworks</title>
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/style.css')}}">
+    
+    <style>
+    @font-face {
+        font-family: "GenericMobileSystemNuevo";
+        src: url("/GenericMobileSystemNuevo.ttf");
+    }
+    </style>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <script src="../static/shader/fireworks_render_shader.js"></script>
+    <script src="../static/shader/fireworks_compute_shader.js"></script>
+    <script src="../static/js/fireworks.js"></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div id="canvas_container" class="canvas_container">
+            <canvas width="1280" height="720"></canvas>
+        </div>
+
+        <div class="header_div">
+            <h1>Happy</h1>
+            <h1>New</h1>
+            <h1>Year!</h1>
+        </div>
+    </div>
+
+    <script>
+        var webgpu_handler = new WebGPUHandler();
+        webgpu_handler.init().then(function() {
+            webgpu_handler.render();
+        })
+    </script>
+
+</body>
+</html>

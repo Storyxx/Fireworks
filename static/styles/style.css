@@ -1,0 +1,58 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: black;
+    height: calc(100vh - 10px);
+    margin: 10px;
+
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'GenericMobileSystemNuevo';
+    font-size: 128px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: normal;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.canvas_container {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+canvas {
+    aspect-ratio: 16 / 9;
+    height: min(100%, 100vw * 9 / 16);
+}
+
+
