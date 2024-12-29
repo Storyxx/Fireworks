@@ -8,3 +8,6 @@
 2. launch with `flask --app app.py --debug run`
 3. watch fireworks! 🎆
 
+## Just Watch
+
+[My YouTube](https://youtu.be/TTM04_sctLU)
